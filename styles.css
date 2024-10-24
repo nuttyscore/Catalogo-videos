@@ -21,10 +21,10 @@ header {
 }
 
 .logo {
-    font-size: 48px;
+    font-size: 100px;  /* Aumenta o tamanho da logo */
     font-weight: bold;
     color: #e50914;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 main {
