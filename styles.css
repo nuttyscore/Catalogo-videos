@@ -1,42 +1,83 @@
-body {
-    background-color: #141414;
-    color: #fff;
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    font-size: 16px;
 }
 
 header {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    background-color: #111;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e50914;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    text-align: center;
+    padding: 50px 20px;
     background-color: #e50914;
 }
 
-.catalogo {
-    padding: 20px;
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-.filmes {
+.banner p {
+    font-size: 18px;
+}
+
+.video-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
-.filme {
-    background-color: #333;
-    padding: 10px;
-    border-radius: 8px;
+.video-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
     text-align: center;
 }
 
-.filme img {
+.video-card img {
     width: 100%;
-    border-radius: 8px;
+    border-bottom: 2px solid #e50914;
 }
 
-.filme p {
-    margin: 10px 0 0;
+.video-card h3 {
+    padding: 10px;
     font-size: 18px;
-    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #aaa;
 }
