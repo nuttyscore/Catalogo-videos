@@ -1,1 +1,92 @@
+/* Estilo global */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #141414;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #141414;
+    padding: 20px;
+    text-align: left;
+}
+
+.logo h1 {
+    color: #e50914;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Estilo do catálogo */
+.video-catalog {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-catalog h2 {
+    color: #e50914;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video-item {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+}
+
+.video-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.video-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Rodapé */
+footer {
+    background-color: #141414;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Tornar responsivo */
+@media (max-width: 768px) {
+    .video-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
