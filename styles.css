@@ -1,102 +1,42 @@
-* {
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Helvetica', sans-serif;
-    background-color: #111;
-    color: #fff;
 }
 
 header {
+    text-align: center;
+    padding: 20px;
     background-color: #e50914;
+}
+
+.catalogo {
     padding: 20px;
-    text-align: center;
 }
 
-header .logo h1 {
-    color: #fff;
-    font-size: 3rem;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
-
-.banner {
-    background-image: url('https://image.tmdb.org/t/p/original/t/p/w1920_and_h800_multi_faces/cEUOtGMsrrKjKGtB3WNV3r5qqi7.jpg'); /* Banner de fundo */
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner-content {
-    background-color: rgba(0, 0, 0, 0.6);
+.filmes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
-    text-align: center;
-    border-radius: 10px;
 }
 
-.banner-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.banner-content p {
-    font-size: 1.2rem;
-}
-
-.catalog {
-    padding: 20px;
-    text-align: center;
-}
-
-.catalog h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.catalog-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.video-item {
-    background-color: #222;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 200px;
-    transition: transform 0.3s ease;
-}
-
-.video-item:hover {
-    transform: scale(1.05);
-}
-
-.video-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.video-item p {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-footer {
-    background-color: #000;
+.filme {
+    background-color: #333;
     padding: 10px;
+    border-radius: 8px;
     text-align: center;
-    color: #fff;
-    margin-top: 20px;
-    font-size: 0.9rem;
+}
+
+.filme img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.filme p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    font-weight: bold;
 }
